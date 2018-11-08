@@ -1,4 +1,23 @@
 <!--pages/index/index.wxml-->
 <view class="container">
-Hello World
+  <view class="pic">
+    <image class="userinfo-avatar" src="http://aimg8.dlszyht.net.cn/ev_user_module_content_tmp/800_1500/1653180/2395/4789768_1525307540.png?t=8672" mode="cover"></image>
+    <ul class="nav">
+      <li>
+        <navigator url="/page/index/index" open-type="switchTab" hover-class="other-navigator-hover">茶品一览</navigator>
+      </li>
+      <li>
+        <navigator url="/page/index/index" open-type="switchTab" hover-class="other-navigator-hover">品茶之道</navigator>
+      </li>
+      <li>
+        <navigator url="/page/index/index" open-type="switchTab" hover-class="other-navigator-hover">联系我们</navigator>
+      </li>
+      <li>
+        <navigator url="/page/index/index" open-type="switchTab" hover-class="other-navigator-hover">关于我们</navigator>
+      </li>
+    </ul>
+  </view>
+  <view class="search">
+    <input type="text" placeholder="请输入茶叶品种" />
+  </view>
 </view>
