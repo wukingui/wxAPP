@@ -1,6 +1,6 @@
 <!--pages/index/index.wxml-->
 <view class="container">
-  <view class="pic">
+  <view class="banner">
     <image class="userinfo-avatar" src="http://aimg8.dlszyht.net.cn/ev_user_module_content_tmp/800_1500/1653180/2395/4789768_1525307540.png?t=8672" mode="cover"></image>
     <ul class="nav">
       <li>
@@ -19,5 +19,27 @@
   </view>
   <view class="search">
     <input type="text" placeholder="请输入茶叶品种" />
+    <button>搜索</button>
+  </view>
+  <view class="customModule">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="product">
+    <view class="title">
+      <view class="title-left"></view>
+      <view class="content">
+        <image src="http://yby.weixin0577.com/images/wap/tit14_l.png" mode="cover"></image>
+        <view class="product">茶品一览</view>
+        <image src="http://yby.weixin0577.com/images/wap/tit14_r.png" mode="cover"></image>
+      </view>
+      <view class="title-right"></view>
+    </view>
   </view>
 </view>

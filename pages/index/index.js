@@ -5,7 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    imgUrls: [
+      'http://aimg8.dlszyht.net.cn/ev_user_module_content_tmp/2018_05_03/tmp1525307586_1653180_s.png',
+      'http://aimg8.dlszyht.net.cn/ev_user_module_content_tmp/2018_05_03/tmp1525307621_1653180_s.png',
+      'http://aimg8.dlszyht.net.cn/ev_user_module_content_tmp/2018_05_03/tmp1525307640_1653180_s.png',
+      'http://aimg8.dlszyht.net.cn/ev_user_module_content_tmp/2018_05_03/tmp1525307654_1653180_s.png',
+      'http://aimg8.dlszyht.net.cn/ev_user_module_content_tmp/2018_05_03/tmp1525312749_1653180_s.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 3000,
+    duration: 500
   },
 
   /**
